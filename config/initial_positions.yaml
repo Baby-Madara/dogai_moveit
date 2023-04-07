@@ -1,0 +1,6 @@
+# Default initial positions for dogai's ros2_control fake system
+
+initial_positions:
+  foreleg_fl_j: 0
+  leg_fl_j: 0
+  shoulder_fl_j: 0

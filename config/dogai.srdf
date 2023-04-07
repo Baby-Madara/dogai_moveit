@@ -10,16 +10,16 @@
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
     <group name="limb_fl">
-        <link name="foreleg_fl"/>
         <link name="world"/>
         <link name="body"/>
-        <link name="shoulder_fl"/>
         <link name="leg_fl"/>
+        <link name="foreleg_fl"/>
+        <link name="shoulder_fl"/>
+        <joint name="fixed_joint"/>
+        <joint name="dummy_joint"/>
         <joint name="shoulder_fl_j"/>
         <joint name="leg_fl_j"/>
         <joint name="foreleg_fl_j"/>
-        <joint name="dummy_joint"/>
-        <joint name="fixed_joint"/>
         <chain base_link="world" tip_link="foreleg_fl"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
@@ -30,8 +30,8 @@
     </group_state>
     <group_state name="pose1" group="limb_fl">
         <joint name="foreleg_fl_j" value="-2"/>
-        <joint name="leg_fl_j" value="1.3835"/>
-        <joint name="shoulder_fl_j" value="-0.6682"/>
+        <joint name="leg_fl_j" value="0.671"/>
+        <joint name="shoulder_fl_j" value="0"/>
     </group_state>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="fixed_joint" type="fixed" parent_frame="map" child_link="world"/>

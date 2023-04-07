@@ -1,11 +1,29 @@
 moveit_setup_assistant_config:
-  URDF:
+  urdf:
     package: dogai
     relative_path: urdf/dogai.urdf
-    xacro_args: ""
-  SRDF:
+  srdf:
     relative_path: config/dogai.srdf
-  CONFIG:
-    author_name: pita011
+  package_settings:
+    author_name: pita012
     author_email: ahmedfarahat1177@gmail.com
-    generated_timestamp: 1680832504
+    generated_timestamp: 1680833349
+  control_xacro:
+    command:
+      - position
+      - velocity
+    state:
+      - position
+      - velocity
+      - effort
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+      - velocity
+    state:
+      - position
+      - velocity
+      - effort
