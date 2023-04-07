@@ -1,0 +1,9 @@
+controller_list:
+  - name: limb_fl_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - shoulder_fl_j
+      - leg_fl_j
+      - foreleg_fl_j

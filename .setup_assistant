@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: dogai
+    relative_path: urdf/dogai.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/dogai.srdf
+  CONFIG:
+    author_name: pita011
+    author_email: ahmedfarahat1177@gmail.com
+    generated_timestamp: 1680832504
