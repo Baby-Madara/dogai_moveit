@@ -4,6 +4,7 @@ This is a moveit configuration package for dogai which is a custom package made 
 mechanical design is from the open source design (SpotMicroAI)
 
 ```ros1 version```: ros noetic
+
 ```ros2 version```: ros humble
 
 ```WARNING```: for ros2 branch, it does not work properly yet!
