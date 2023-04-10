@@ -3,16 +3,21 @@ controller_manager:
   ros__parameters:
     update_rate: 100  # Hz
 
-    dog_fl_controller:
-      type: position_controllers/GripperActionController
+    limb_fl_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
 
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-dog_fl_controller:
+limb_fl_controller:
   ros__parameters:
     joints:
       - shoulder_fl_j
       - leg_fl_j
       - foreleg_fl_j
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity

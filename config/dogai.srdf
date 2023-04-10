@@ -12,9 +12,9 @@
     <group name="limb_fl">
         <link name="world"/>
         <link name="body"/>
+        <link name="shoulder_fl"/>
         <link name="leg_fl"/>
         <link name="foreleg_fl"/>
-        <link name="shoulder_fl"/>
         <joint name="fixed_joint"/>
         <joint name="dummy_joint"/>
         <joint name="shoulder_fl_j"/>
@@ -29,9 +29,9 @@
         <joint name="shoulder_fl_j" value="0"/>
     </group_state>
     <group_state name="pose1" group="limb_fl">
-        <joint name="foreleg_fl_j" value="-2"/>
-        <joint name="leg_fl_j" value="0.671"/>
-        <joint name="shoulder_fl_j" value="0"/>
+        <joint name="foreleg_fl_j" value="-1.6133"/>
+        <joint name="leg_fl_j" value="0.8407"/>
+        <joint name="shoulder_fl_j" value="-0.518"/>
     </group_state>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="fixed_joint" type="fixed" parent_frame="map" child_link="world"/>
