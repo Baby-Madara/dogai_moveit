@@ -5,6 +5,14 @@ controller_list:
       - shoulder_fl_j
       - leg_fl_j
       - foreleg_fl_j
+  - name: fake_limb_bl_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - shoulder_bl_j
+      - leg_bl_j
+      - foreleg_bl_j
 initial:  # Define initial robot poses per group
   - group: limb_fl
     pose: pose0
+  - group: limb_bl
+    pose: pose2

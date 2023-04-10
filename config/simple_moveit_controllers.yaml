@@ -7,3 +7,11 @@ controller_list:
       - shoulder_fl_j
       - leg_fl_j
       - foreleg_fl_j
+  - name: limb_bl_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - shoulder_bl_j
+      - leg_bl_j
+      - foreleg_bl_j
