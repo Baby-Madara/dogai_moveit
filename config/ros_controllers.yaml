@@ -1,5 +1,5 @@
 limb_fl_controller:
-  type: effort_controllers/JointTrajectoryController
+  type: position_controllers/JointTrajectoryController
   joints:
     - shoulder_fl_j
     - leg_fl_j
@@ -21,7 +21,7 @@ limb_fl_controller:
       i: 1
       i_clamp: 1
 limb_bl_controller:
-  type: effort_controllers/JointTrajectoryController
+  type: position_controllers/JointTrajectoryController
   joints:
     - shoulder_bl_j
     - leg_bl_j
@@ -38,6 +38,50 @@ limb_bl_controller:
       i: 1
       i_clamp: 1
     foreleg_bl_j:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+limb_fr_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - shoulder_fr_j
+    - leg_fr_j
+    - foreleg_fr_j
+  gains:
+    shoulder_fr_j:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    leg_fr_j:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    foreleg_fr_j:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+limb_br_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - shoulder_br_j
+    - leg_br_j
+    - foreleg_br_j
+  gains:
+    shoulder_br_j:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    leg_br_j:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    foreleg_br_j:
       p: 100
       d: 1
       i: 1

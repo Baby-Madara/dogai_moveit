@@ -13,7 +13,17 @@ joint_limits:
     max_velocity: 4
     has_acceleration_limits: false
     max_acceleration: 0
+  foreleg_br_j:
+    has_velocity_limits: true
+    max_velocity: 4
+    has_acceleration_limits: false
+    max_acceleration: 0
   foreleg_fl_j:
+    has_velocity_limits: true
+    max_velocity: 4
+    has_acceleration_limits: false
+    max_acceleration: 0
+  foreleg_fr_j:
     has_velocity_limits: true
     max_velocity: 4
     has_acceleration_limits: false
@@ -23,7 +33,17 @@ joint_limits:
     max_velocity: 4
     has_acceleration_limits: false
     max_acceleration: 0
+  leg_br_j:
+    has_velocity_limits: true
+    max_velocity: 4
+    has_acceleration_limits: false
+    max_acceleration: 0
   leg_fl_j:
+    has_velocity_limits: true
+    max_velocity: 4
+    has_acceleration_limits: false
+    max_acceleration: 0
+  leg_fr_j:
     has_velocity_limits: true
     max_velocity: 4
     has_acceleration_limits: false
@@ -33,7 +53,17 @@ joint_limits:
     max_velocity: 4
     has_acceleration_limits: false
     max_acceleration: 0
+  shoulder_br_j:
+    has_velocity_limits: true
+    max_velocity: 4
+    has_acceleration_limits: false
+    max_acceleration: 0
   shoulder_fl_j:
+    has_velocity_limits: true
+    max_velocity: 4
+    has_acceleration_limits: false
+    max_acceleration: 0
+  shoulder_fr_j:
     has_velocity_limits: true
     max_velocity: 4
     has_acceleration_limits: false

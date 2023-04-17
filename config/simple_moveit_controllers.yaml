@@ -15,3 +15,19 @@ controller_list:
       - shoulder_bl_j
       - leg_bl_j
       - foreleg_bl_j
+  - name: limb_fr_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - shoulder_fr_j
+      - leg_fr_j
+      - foreleg_fr_j
+  - name: limb_br_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - shoulder_br_j
+      - leg_br_j
+      - foreleg_br_j

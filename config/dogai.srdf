@@ -35,21 +35,72 @@
         <joint name="foreleg_bl_j"/>
         <chain base_link="world" tip_link="foreleg_bl"/>
     </group>
+    <group name="limb_fr">
+        <link name="world"/>
+        <link name="body"/>
+        <link name="shoulder_fr"/>
+        <link name="leg_fr"/>
+        <link name="foreleg_fr"/>
+        <joint name="fixed_joint"/>
+        <joint name="dummy_joint"/>
+        <joint name="shoulder_fr_j"/>
+        <joint name="leg_fr_j"/>
+        <joint name="foreleg_fr_j"/>
+        <chain base_link="world" tip_link="foreleg_fr"/>
+    </group>
+    <group name="limb_br">
+        <link name="world"/>
+        <link name="body"/>
+        <link name="shoulder_br"/>
+        <link name="leg_br"/>
+        <link name="foreleg_br"/>
+        <joint name="fixed_joint"/>
+        <joint name="dummy_joint"/>
+        <joint name="shoulder_br_j"/>
+        <joint name="leg_br_j"/>
+        <joint name="foreleg_br_j"/>
+        <chain base_link="world" tip_link="foreleg_br"/>
+    </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
-    <group_state name="pose0" group="limb_fl">
+    <group_state name="posefl0" group="limb_fl">
         <joint name="foreleg_fl_j" value="0"/>
         <joint name="leg_fl_j" value="0"/>
         <joint name="shoulder_fl_j" value="0"/>
     </group_state>
-    <group_state name="pose1" group="limb_fl">
+    <group_state name="posefl1" group="limb_fl">
         <joint name="foreleg_fl_j" value="-2"/>
         <joint name="leg_fl_j" value="1.3835"/>
         <joint name="shoulder_fl_j" value="-0.6682"/>
     </group_state>
-    <group_state name="pose2" group="limb_bl">
+    <group_state name="posebl1" group="limb_bl">
         <joint name="foreleg_bl_j" value="-1.3224"/>
         <joint name="leg_bl_j" value="1.0392"/>
         <joint name="shoulder_bl_j" value="-0.7173"/>
+    </group_state>
+    <group_state name="posebl0" group="limb_bl">
+        <joint name="foreleg_bl_j" value="0"/>
+        <joint name="leg_bl_j" value="0"/>
+        <joint name="shoulder_bl_j" value="0"/>
+    </group_state>
+    <group_state name="posefr0" group="limb_fr">
+        <joint name="foreleg_fr_j" value="0"/>
+        <joint name="leg_fr_j" value="0"/>
+        <joint name="shoulder_fr_j" value="0"/>
+    </group_state>
+    <group_state name="posefr1" group="limb_fr">
+        <joint name="foreleg_fr_j" value="-1.8248"/>
+        <joint name="leg_fr_j" value="-1.5"/>
+        <joint name="shoulder_fr_j" value="-0.521"/>
+    </group_state>
+    <group_state name="posebr0" group="limb_br">
+        <joint name="foreleg_br_j" value="0"/>
+        <joint name="leg_br_j" value="0"/>
+        <joint name="shoulder_br_j" value="0"/>
+    </group_state>
+    <group_state name="posebr1" group="limb_br">
+        <joint name="foreleg_br_j" value="0.5"/>
+        <joint name="leg_br_j" value="1.5413"/>
+        <joint name="shoulder_br_j" value="-0.75"/>
     </group_state>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="fixed_joint" type="fixed" parent_frame="map" child_link="world"/>
